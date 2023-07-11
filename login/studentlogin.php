@@ -23,7 +23,7 @@ session_start();
 if(isset($_POST['bttlogin'])){
 	    $MN=$_POST['matricnumber'];
 	        $PW=$_POST['password'];
-	        $result=mysqli_query($conn,'select * from  me where matricnumber="'.$MatricNumber.'" and password="'.$Password.'"');
+	        $result=mysqli_query($conn,'select * from  me where matricnumber="'.$MN.'" and password="'.$PW.'"');
 
 		if(mysqli_num_rows($result)==1){
 			    $_SESSION['matricnumber']=$Matric;
